@@ -6,10 +6,11 @@
 const tailwindcss = require("tailwindcss")
 module.exports = {
   siteName: 'Connor Reilly Resume',
-
+  templates: {
+    ContentfulBlogPost: '/blog/:slug'
+  },
   plugins: [
     {
-      use: 'gridsome-plugin-tailwindcss',
       use: "@gridsome/source-contentful",
       options: {
         space: process.env.CONTENTFUL_SPACE,

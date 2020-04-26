@@ -1,6 +1,5 @@
 <template>
   <Layout>
-    <g-image class="hero-image" :src="$page.post.heroImage.file.url" />
     <h1>{{$page.post.title}}</h1>
     <div v-html="body" />
   </Layout>
@@ -9,13 +8,11 @@
 <page-query>
 query Post ($path: String!) {
   post: contentfulBlogPost (path: $path) {
+    id,
     title,
-    heroImage {
-      file {
-        url
-      }
-    },
-    body
+    body,
+    path
+    
   }
 }
 </page-query>
