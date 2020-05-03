@@ -5,7 +5,7 @@
 // To restart press CTRL + C in terminal and run `gridsome develop`
 const tailwindcss = require("tailwindcss")
 module.exports = {
-  siteName: 'Connor Reilly Resume',
+  siteName: 'Connor Reilly',
   templates: {
     ContentfulBlogPost: '/blog/:slug'
   },

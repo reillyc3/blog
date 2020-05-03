@@ -1,7 +1,10 @@
 <template>
   <Layout>
-    <h1>{{$page.post.title}}</h1>
-    <div v-html="body" />
+    <div class="container py-10 px-auto mx-auto flex flex-wrap flex-col">
+    <h1 class="text-2xl mb-2 text-center ">{{$page.post.title}}</h1>
+    <p class="font-light text-sm text-center text-gray mb-6"> Posted on {{$page.post.date}} </p>
+    <div class="text-left " v-html="body" />
+    </div>
   </Layout>
 </template>
 
@@ -11,6 +14,7 @@ query Post ($path: String!) {
     id,
     title,
     body,
+    date (format: "MMMM DD, YYYY"),
     path
     
   }

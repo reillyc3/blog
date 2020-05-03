@@ -1,17 +1,21 @@
 <template>
   <Layout>
-  <div class="container justify-center px-auto mx-auto flex flex-wrap flex-col md:flex-row items-center">
-   <div class="mx-0 px-auto">
-    <h1 class="text-5xl font-bold leading-tight mb-6 mt-4 text-center">Blog</h1>
+  <div class="container grid grid-cols-1 justify-center px-auto mx-auto flex flex-wrap flex-col md:flex-row items-center ">
+   <div class="mx-0 px-auto max-w-xl mx-auto">
+    <h1 class="text-2xl font-bold leading-tight mb-6 mt-4 text-center text-primary">Blog</h1>
     <ul>
       <li v-for="{ node } in $page.posts.edges" :key="node.id">
-       <div class="max-auto-sm overflow-hidden shadow-lg p-20 m-4">
-        <g-link class="text-3xl" :to="node.path"> {{node.title}}  </g-link>
-        <p class="pt-5"> {{node.description}} </p>
-        <p class="font-light pt-5 mb-0"> Posted on {{node.date}} </p>
+        <g-link :to="node.path">
+       <div class=" border-solid border-2 border-primary max-auto-sm overflow-hidden shadow-lg p-20 m-4 rounded-md">
+        <h1 class="text-2xl text-primary font-bold">  {{node.title}}  </h1>
+        <p class="pt-5 text-darkgray"> {{node.description}} </p>
+        <p class="font-normal text-sm pt-5 text-primary"> Posted on {{node.date}} </p>
         </div>
+        </g-link>
       </li>
+      
     </ul>
+    
     </div>
     </div>
   </Layout>
@@ -33,3 +37,11 @@ query Posts {
   }
 }
 </page-query>
+
+<script>
+export default {
+  metaInfo: {
+    title: 'Blog'
+  }
+}
+</script>
