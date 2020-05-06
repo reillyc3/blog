@@ -1,9 +1,9 @@
 <template>
   <Layout>
-    <div class="container py-10 px-auto mx-auto flex flex-wrap flex-col">
-    <h1 class="text-2xl mb-2 text-center ">{{$page.post.title}}</h1>
+    <div class="container justify-center content-center grid grid-cols-1 py-10 px-auto markdown px-6 xl:px-12 w-full max-w-3xl mx-auto xl:w-3/4">
+    <h1 class="text-2xl mb-2 text-center text-primary">{{$page.post.title}}</h1>
     <p class="font-light text-sm text-center text-gray mb-6"> Posted on {{$page.post.date}} </p>
-    <div class="text-left " v-html="body" />
+    <div id="body" class="max-auto-sm text-left" v-html="body" />
     </div>
   </Layout>
 </template>
@@ -34,3 +34,29 @@ query Post ($path: String!) {
     }
   };
 </script>
+
+<style>
+#body{
+  color: #2d3748;
+}
+#body h1 {
+  font-size: 20px;
+  padding-bottom: 10px;
+  padding-top: 10px;
+}
+
+#body hr{
+  padding-bottom: 10px;
+}
+
+#body pre{
+  background-color: #2d3748;
+  color: #a0aec0;
+  margin: 20px;
+  padding: 20px;
+  border-radius: 20px;
+  flex-wrap: inherit;
+  
+}
+
+</style>
