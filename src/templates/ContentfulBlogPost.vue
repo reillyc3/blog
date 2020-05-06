@@ -55,8 +55,24 @@ query Post ($path: String!) {
   margin: 20px;
   padding: 20px;
   border-radius: 20px;
-  flex-wrap: inherit;
+  display: flex;
+  flex-wrap: wrap;
   
 }
 
+#body pre code{ 
+  overflow: scroll;
+
+}
+#body ul li{
+  list-style-position: inside;
+  list-style-type: square;
+}
+#body ol{
+  padding-top: 10px;
+  padding-bottom:  10px ;
+  font-size: 20px;
+  list-style-type: decimal;
+  list-style-position: inside;
+}
 </style>
