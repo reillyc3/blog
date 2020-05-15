@@ -62,6 +62,7 @@ query Post ($path: String!) {
 
 #body pre code{ 
   overflow: scroll;
+  max-height: 400px;
 
 }
 #body ul li{
