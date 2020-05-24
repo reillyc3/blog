@@ -4,8 +4,13 @@
     <h1 class="text-2xl mb-2 text-center text-primary">{{$page.post.title}}</h1>
     <p class="font-light text-sm text-center text-gray mb-6"> Posted on {{$page.post.date}} </p>
     <div id="body" class="max-auto-sm text-left" v-html="body" />
+    <div class="pt-20">
+     <vue-disqus shortname="https-connorreilly-netlify-app" :identifier="$page.post.id"></vue-disqus>
     </div>
+    </div>
+  
   </Layout>
+  
 </template>
 
 <page-query>

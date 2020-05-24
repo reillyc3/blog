@@ -7,6 +7,7 @@ import { config, library } from '@fortawesome/fontawesome-svg-core'
 import { faGithub, faTwitter,faHtml5, faCss3, faSalesforce } from '@fortawesome/free-brands-svg-icons'
 import '@fortawesome/fontawesome-svg-core/styles.css'
 import "./assets/css/global.css";
+import VueDisqus from 'vue-disqus'
 
 config.autoAddCss = false;
 library.add(faGithub, faTwitter)
@@ -17,4 +18,5 @@ export default function (Vue, { router, head, isClient }) {
   // Set default layout as a global component
   Vue.component('Layout', DefaultLayout)
   Vue.component('font-awesome', FontAwesomeIcon)
+  Vue.use(VueDisqus)
 }
