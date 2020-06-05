@@ -42,15 +42,15 @@
        <div class="bg-gray-100 lg:py-12 lg:flex lg:justify-center flex-wrap">
         <div class="bg-white lg:flex lg:max-w-5xl lg:shadow-lg lg:rounded-lg flex-wrap">
              <div class="py-12 px-6 max-w-xl lg:max-w-5xl lg:w-1/2 flex-wrap">
-                <h2 class="text-2xl font-bold text-primary">Coming Soon!</h2>
-                <p class="mt-4 text-darkgray">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quidem modi reprehenderit vitae exercitationem aliquid dolores ullam temporibus enim expedita aperiam mollitia iure consectetur dicta tenetur, porro consequuntur saepe accusantium consequatur.</p>
+                <h2 class="text-2xl font-bold text-primary">Your Virtual Salesforce Admin</h2>
+                <p class="mt-4 text-darkgray">I run a Salesforce Admin service as a side hustle. Often times it doesn't make sense for small orgs to have a dedicated resource full-time. Enter V-Admin!</p>
                 <div class="mt-8">
-                    <a href="#" class="bg-primary text-white hover:bg-darkgray rounded-full px-5 py-3 font-semibold rounded">View</a>
+                    <a href="https://www.yourvadmin.com/" class="bg-primary text-white hover:bg-darkgray rounded-full px-5 py-3 font-semibold rounded">View</a>
                 </div>
             </div>
             <div class="lg:w-1/2">
                 <div class="h-64 bg-cover lg:rounded-lg lg:h-full">
-                  <img class="" src="../images/undraw_under_construction_46pa.svg" alt="" >
+                  <img class="" src="../images/yourvadmin.png" alt="" >
                 </div>
             </div>
         </div>
