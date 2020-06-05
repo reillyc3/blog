@@ -1,5 +1,4 @@
 <template>
-  
   <!-- Put the sections here -->
   <div class="layout">
   <header class="md:flex md:items-center md:justify-around p-4 pb-0 shadow-lg md:pb-4">
