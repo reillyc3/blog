@@ -50,7 +50,25 @@
             </div>
             <div class="lg:w-1/2">
                 <div class="h-64 bg-cover lg:rounded-lg lg:h-full">
-                  <img class="" src="../images/yourvadmin.png" alt="" >
+                  <img class="" src="../images/yourvadmin.png" alt="image of yourvadmin landing page" >
+                </div>
+            </div>
+        </div>
+    </div> 
+</div>
+  <div>
+       <div class="bg-gray-100 lg:py-12 lg:flex lg:justify-center flex-wrap">
+        <div class="bg-white lg:flex lg:max-w-5xl lg:shadow-lg lg:rounded-lg flex-wrap">
+          <div class="lg:w-1/2">
+                <div class="h-64 bg-cover lg:rounded-lg lg:h-full">
+                  <img class="" src="../images/news-site.png" alt="image of new site" >
+                </div>
+            </div>
+             <div class="py-12 px-6 max-w-xl lg:max-w-5xl lg:w-1/2 flex-wrap">
+                <h2 class="text-2xl font-bold text-primary">News Site</h2>
+                <p class="mt-4 text-darkgray">Random headlines from the US. Utalizes newsapi.org and gridsome to quickly get up and running.</p>
+                <div class="mt-8">
+                    <a href="https://cocky-tereshkova-f0e8f8.netlify.app/" class="bg-primary text-white hover:bg-darkgray rounded-full px-5 py-3 font-semibold rounded">View</a>
                 </div>
             </div>
         </div>
